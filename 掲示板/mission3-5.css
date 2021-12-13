@@ -1,0 +1,192 @@
+/* 文字フォント設定 START */
+.title1 {
+    font-family: 'Hannotate SC','ヒラギノ角ゴシック','Hiragino Sans',sans-serif;
+  }
+  
+  
+  h1 {
+    font-family: 'Sacramento', cursive;
+    text-align: center;
+  }
+  
+  h2 {
+    font-family: 'Hannotate SC',sans-serif;
+  }
+  
+  h3 {
+     font-family: 'Hannotate SC','ヒラギノ角ゴシック','Hiragino Sans',sans-serif;  
+  }
+  
+  p {
+     font-family: 'TsukuARdGothic-Regular',sans-serif; 
+  }
+  
+  html {
+      background-color:  #ddccbd;
+      color: #565656;
+  }
+  /* 文字フォント設定 END */
+  
+  
+  
+  /*掲示板のお題 START*/
+  
+     /* 黒板風　タイトル　1 */
+  .kokuban1 {
+      position: relative;
+      margin: 2em auto;
+      padding: 3.2em 1em 1em;
+      width: 90%; /* ボックス幅 */
+      background-color: #332629; /* ボックス背景色 */
+      color: #fffffb; /* 文章色 */
+      border: 10px solid #8f6552; /* 枠線 */
+      border-radius: 3px; /* 角の丸み */
+      box-shadow: 0 0 5px #333;
+     }
+     .kokuban1::before,
+     .kokuban1::after {
+      position: absolute;
+      content: '';
+      bottom: 0;
+     } 
+     .kokuban1::before {
+      right: 10px;
+      border: solid 3px #FDD84C; /*チョーク（黄色）*/
+      width: 20px; 
+      border-radius: 3px 2px 0 2px;
+     }
+     .kokuban1::after {
+      right: 40px;
+      border: solid 3px  #FC9DB8;  /*チョーク（ピンク）*/
+      width: 15px; 
+      border-radius: 8px 5px 2px 5px;
+     }
+     .title1 {
+      position: absolute;
+      left: 1em;
+      top: .5em;
+      font-weight: bold;
+      font-size: 1.5em;
+      color:  #FC9DB8; /* タイトル色 */
+     }
+  
+  
+    .sonota {
+        font-family: 'TsukuARdGothic-Regular',sans-serif;
+        font-size: 1.2em;
+        color: #FDD84C;
+    } 
+  /*掲示板のお題 END*/
+  
+  
+  /*新規投稿フォーム 装飾 START */
+      /* 本体 */
+      .coffee {
+          font-size: 30px;
+          position: relative;
+          margin: 0.2em 0 0 0.2em;
+          width: 1em;
+          height: 1em;
+          background-color: #32261b;
+          border-radius: 0 0 0.2em 0.2em;
+      }
+      /* 取っ手 */
+      .coffee::before {
+         content: "";
+         position: absolute;
+         top: 0.1em;
+         left: 0.8em;
+         width: 0.4em;
+         height: 0.4em;
+         border: 0.1em solid #32261b;
+         border-radius: 0 30% 30% 0;
+      }
+      /* 皿 */
+      .coffee::after {
+          content: "";
+          position: absolute;
+          top: 1.1em;
+          left: -0.2em;
+          width: 1.4em;
+          height: 0.2em;
+          background-color: #32261b;
+          border-radius: 0 0 15% 15% /  0 0 15% 15%;
+      }
+  /*新規投稿フォーム 装飾 END */
+  
+  
+  /*削除フォーム 装飾 START */
+      /* フォーク */
+      .cutlery {
+          font-size: 30px;
+          position: relative;
+          margin: 0.1em 0 0 0.3em;
+          width: 0.1em;
+          height: 0.6em;
+          background-color:#32261b;
+          border-radius: 0.1em;
+          box-shadow:
+          0.15em 0 0 0 #32261b,
+          0.3em 0 0 0 #32261b;
+      }
+      /* 柄 */
+      .cutlery::before {
+          content: "";
+          position: absolute;
+          top: 0.5em;
+          left: 0.05em;
+          width: 0.3em;
+          height: 0.9em;
+          background-color:#32261b;
+          border-radius: 0 0 0.1em 0.1em;
+          box-shadow: 0.7em 0 0 0 #32261b;
+      }
+      /* ナイフ */
+      .cutlery::after {
+          content: "";
+          position: absolute;
+          top: 0.;
+          left: 0.55em;
+          width: 0.5em;
+          height: 0.9em;
+          background-color:#32261b;
+          border-radius: 0.5em 0.1em 0.1em 0.1em;
+      }
+  /*削除フォーム 装飾 END */
+  
+  
+  /*編集フォーム 装飾 START */
+      /* 本体 */
+      .glass {
+          font-size: 30px;
+          position: relative;
+          margin: 0.2em 0 0 0.4em;
+          width: 0.6em;
+          height: 1.2em;
+          border: 0.1em solid #32261b;
+          border-radius: 0 0 0.1em 0.1em;
+      }
+      /* 中身 */
+      .glass::before {
+          content: "";
+          position: absolute;
+          top: 0.25em;
+          left: 0.05em;
+          width: 0.5em;
+          height: 0.9em;
+          background-color: #a27860;
+          border-radius: 0 0 0.05em 0.05em;
+      }
+      /* ストロー */
+      .glass::after {
+          content: "";
+          position: absolute;
+          top: -0.3em;
+          left: 0.3em;
+          width: 0.1em;
+          height: 1em;
+          background-color: #32261b;
+          -webkit-transform: skewX(-15deg);
+          transform: skewX(-15deg);
+      }
+  /*削除フォーム 装飾 END */
